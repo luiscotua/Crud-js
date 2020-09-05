@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase-firestore.js"></script>
+
+    <title>El Condor | CRUD</title>
+  </head>
+  <body>
+  	<div class="container">
+  		<h1> Agregar Empleado </h1>
+      <input type="text" id="tipo" placeholder="tipo documento" class="form-control my-3">
+      <input type="text" id="numero" placeholder="numero documento" class="form-control my-3">
+    	<input type="text" id="nombre" placeholder="nombres" class="form-control my-3">
+    	<input type="text" id="apellido" placeholder="apellidos" class="form-control my-3">
+    	<input type="text" id="fecha" placeholder="fecha" class="form-control my-3">
+      <input type="text" id="area" placeholder="area" class="form-control my-3">
+    	<button class="btn btn-info" id="boton" onclick="guardar()">Guardar</button>
+
+    	<table class="table my-3">
+		  <thead>
+		    <tr>
+		      <th scope="col">id</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Numero</th>
+		      <th scope="col">Nombres</th>
+		      <th scope="col">Apellidos</th>
+		      <th scope="col">Fecha</th>
+          <th scope="col">Area</th>
+		      <th scope="col">Eliminar</th>
+		      <th scope="col">Modificar</th>
+		    </tr>
+		  </thead>
+		  <tbody id="tabla">
+
+    	  </tbody>
+		</table>
+
+     </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous">
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="crud.js"></script>
+
+  </body>
+</html>
